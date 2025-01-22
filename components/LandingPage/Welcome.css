@@ -1,0 +1,83 @@
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    height: 100vh;
+    text-align: left;
+    background-color: var(--primary-color);
+    margin: 0 auto; /* Centering section */
+    scroll-snap-align: start;  
+}
+
+.text-section {
+    flex: 1;
+    max-width: 600px; /* Prevents text from being too wide for readability */
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: var(--secondary-color); /* Using a secondary color for more contrast */
+}
+
+.text-section{
+    position: relative;
+    padding-left: 1.6rem;
+}
+.text-section:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 2px;
+    height: 90%;
+    background-color: #dbd7d7;
+    z-index: -1;
+}
+.text-section::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    width: 3px;
+    height: 40%;
+    border-radius: 6px;
+    background-color: white;
+    z-index: 1;
+}
+
+.vision-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--highlight-color); /* Accent color for emphasis */
+    letter-spacing: 0.1rem;
+    text-transform: uppercase; 
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+    color: var(--text-color); 
+}
+
+@media (max-width: 768px) {
+    .welcome-section {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        height: auto; 
+        gap: 1.5rem;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}

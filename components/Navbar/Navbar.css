@@ -1,0 +1,60 @@
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  /* background: rgba(0, 0, 0, 0.6);  */
+  color: #ffffff;
+  z-index: 30; /* Ensure it stays above the hero video */
+  box-sizing: border-box;
+}
+
+.navbar-brand a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.navbar-brand a:hover{
+    color: var(--primary-color);
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: var(--primary-color); 
+}
+
+.navbar-button {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}

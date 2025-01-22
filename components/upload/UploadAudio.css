@@ -1,0 +1,271 @@
+/* General Styling */
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to bottom, #343736, #babbc1);
+  margin: 0;
+  padding: 0;
+}
+
+.upload-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.upload-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Possible Scores */
+.score-display 
+  margin: 20px 0;
+  text-align: center;
+}
+
+.score-display h2 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.score-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.score-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.score-card:hover {
+  transform: scale(1.1);
+}
+
+/* Upload Box */
+.upload-box {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-button {
+  padding: 10px 20px;
+  background-color: #1a1318;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+label.file-upload-label{
+  background-color: orange;
+}
+
+.upload-button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Airplane Loader Animation */
+.airplane-loader {
+  animation: fly 1.5s linear infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+/* Result Panel */
+.result-panel {
+  margin-top: 30px;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.transcription-box {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.transcription-box h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.transcription-box p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Custom File Upload Button */
+.file-upload-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload-label:hover {
+  background-color: #0056b3;
+}
+
+.file-input {
+  display: none;
+}
+
+/* Possible Scores */
+.score-display {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.score-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.score-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Highlight Animation */
+.score-card.highlighted {
+  background: #4caf50;
+  color: white;
+  transform: scale(1.2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Airplane Loader Animation */
+.airplane-loader {
+  animation: fly 1.5s linear infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+
+
+/* Transcription Card Container */
+.transcription-card {
+  width: 500px;
+  height: 200px;
+  perspective: 1000px; /* Creates the 3D effect */
+  margin: 20px auto;
+}
+
+/* Card Inner */
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* Flip the card on hover */
+.transcription-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and Back Side */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Front Side Styling */
+.card-front {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Back Side Styling */
+.card-back {
+  background: white;
+  color: #333;
+  transform: rotateY(180deg);
+  overflow-y: auto;
+  padding: 15px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}

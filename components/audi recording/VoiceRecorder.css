@@ -1,0 +1,98 @@
+/* App Container */
+.app-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    background-color: #2b2929;
+    flex-direction: column;
+    width: 50%; /* Set width to 50% */
+    margin: 0 auto; /* Center horizontally */
+    border-radius: 2px; /* Optional: Adds rounded corners for better appearance */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow for a modern look */
+}
+
+
+/* Controls Container */
+.controls-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Control Buttons */
+.control-button {
+  background-color: #ffffff;
+  color: #f76565;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.control-button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.control-button:hover:not(:disabled) {
+  background-color: #f76565;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Delete Button */
+.delete-button {
+  background-color: #ff3333;
+  color: #ffffff;
+}
+
+.delete-button:hover:not(:disabled) {
+  background-color: #cc0000;
+}
+
+/* Toggle Visualizer Button */
+.toggle-visualizer-button {
+  background-color: #ffcc80;
+  color: #ffffff;
+}
+
+.toggle-visualizer-button:hover {
+  background-color: #ff9933;
+}
+
+/* Visualizer */
+.live-visualizer {
+  margin: 20px 0;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+
+/* Recorded Audio Container */
+.recorded-audio-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Audio Header */
+.audio-header {
+  font-size: 18px;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Audio Player */
+.audio-player {
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
