@@ -8,6 +8,7 @@
    git clone https://github.com/Nsralla/Graduation-project-front-end.git
    cd Graduation-project-front-end
 
+   npm run dev
 
 
 ## Images from website 
