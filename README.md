@@ -5,8 +5,9 @@
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/Nsralla/Graduation-project-Back-end-models.git
-   cd Graduation-project-Back-end-models
+   git clone https://github.com/Nsralla/Graduation-project-front-end.git
+   cd Graduation-project-front-end
+
 
 
 ## Images from website 
